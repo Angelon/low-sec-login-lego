@@ -1,0 +1,28 @@
+div#login-container
+  div.col-md-1
+  div.col-md-10
+    div.panel.panel-default
+      div.panel-heading Change your password
+      div.panel-body
+        div#alertContainer
+        form(role="form", ng-controller="ChangePasswordCntrl", id="changePasswordForm")
+          div.form-group
+            label.control-label(for="currentPassword") Current Password
+            input.form-control(type="password", id="currentPassword", placeholder="Current Password", ng-model="data.currentPassword", name="currentPassword")
+            span.control-label.help-block 
+              small
+          div.form-group
+            label.control-label(for="newPassword") New Password
+            input.form-control(type="password", id="newPassword", placeholder="New Password", ng-model="data.newPassword", name="newPassword")
+            span.control-label.help-block 
+              small
+          div.form-group
+            label.control-label(for="verifyNewPassword") Verify New Password
+            input.form-control(type="password", id="verifyNewPassword", placeholder="Verify New Password", ng-model="data.verifyNewPassword", name="verifyNewPassword")
+            span.control-label.help-block 
+              small
+          div
+            input(type="hidden", name="username", id="username", ng-model="data.username", value="#{registeredUser}")
+          div.form-group
+            button.btn.btn-primary.btn-block(type="button", ng-click="submit()") Submit
+script(type='text/javascript', src='/js/loginCntrl.js')

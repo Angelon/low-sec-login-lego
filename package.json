@@ -1,0 +1,18 @@
+{
+  "name": "ss-login",
+  "description": "An extremely simple login structure, with minimal security.",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "express-partials":">=1.0",
+    "connect-flash":">=1.0",
+    "mongodb":">=1.0",
+    "mongoose":">=1.0",
+    "passport":">=1.0",
+    "passport-local":">=1.0",
+    "backbone":">=1.0",
+    "underscore":">=1.0",
+    "nodemailer":">=1.0"
+  }
+}
