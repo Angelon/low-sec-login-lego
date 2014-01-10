@@ -47,8 +47,7 @@ passport.use(new LocalStrategy(
 //Set up the webserver
 var app = express(),
 http = require('http'), 
-server = http.createServer(app),
-io = require('socket.io').listen(server);
+server = http.createServer(app);
 
 app.configure(function(){
     //var edt = require('express-debug');

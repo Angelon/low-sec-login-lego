@@ -13,7 +13,7 @@ var addSuccess = function(element){
 function LoginCtrl($scope) {
   $scope.dataServer = "/";
   $scope.data = {};
-  $scope.data.username = "cartercorker@gmail.com";
+  $scope.data.username = "";
   $scope.data.password = "";
 
   $scope.validateForm = function(){

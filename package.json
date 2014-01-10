@@ -1,18 +1,36 @@
 {
-  "name": "ss-login",
-  "description": "An extremely simple login structure, with minimal security.",
+  "name": "low-sec-login-lego",
+  "description": "A basic NodeJS webserver with minimum security login functionality",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "express": "3.x",
-    "express-partials":">=1.0",
-    "connect-flash":">=1.0",
-    "mongodb":">=1.0",
-    "mongoose":">=1.0",
-    "passport":">=1.0",
-    "passport-local":">=1.0",
-    "backbone":">=1.0",
-    "underscore":">=1.0",
-    "nodemailer":">=1.0"
+    "express": "~3.4.7",
+    "mongoose": "~3.8.4",
+    "nodemailer": "~0.6.0",
+    "express-partials": "~0.1.1",
+    "connect-flash": "~0.1.1",
+    "passport": "~0.1.18",
+    "passport-local": "~0.1.6",
+    "mongodb": "~1.3.23",
+    "backbone": "~1.1.0",
+    "underscore": "~1.5.2",
+    "jade": "~1.1.4"
+  },
+  "scripts": {
+    "start": "sudo node server.js"
+  },
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Angelon/ledgerous.git"
+  },
+  "keywords": [
+    "finance",
+    "ledger"
+  ],
+  "author": "Carter Corker",
+  "bugs": {
+    "url": "https://github.com/Angelon/ledgerous/issues"
   }
 }
